@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>  Gallery Project</title>
+        <style>
+            body {
+                background: #222;
+                margin-top: 20px;
+                font-family:arial;
+                color:white;
+            }
+            .thumbnails img {
+                height: 80px;
+                border: 4px solid #555;
+                padding: 1px;
+                margin: 0 10px 10px 0;
+            }
+            .thumbnails img:hover {
+                border: 4px solid #00ccff; 
+            }
+            .preview img {
+                border: 4px solid#444;
+                padding: 1px;
+                width: 400px;
+                height: 400px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container" align="center">
+            <h1>My Web Page Gallery</h1>
+
+            <br/>
+
+            <div class="thumbnails">
+                <img onmouseover="preview.src=thailand.src" name="thailand" src="images/thailand.png" />
+                <img onmouseover="preview.src=dubai.src" name="dubai" src="images/dubai.png" />
+                <img onmouseover="preview.src=los-angeles.src" name="los-angeles" src="images/los-angeles.png" />
+                <img onmouseover="preview.src=miami.src" name="miami" src="images/miami.png" />
+                <img onmouseover="preview.src=new-york.src" name="new-york" src="images/new-york.png" />
+                <img onmouseover="preview.src=rome.src" name="rome" src="images/rome.png" />
+                <img onmouseover="preview.src=san-francisco.src" name="san-francisco" src="images/san-francisco.png" />
+                <img onmouseover="preview.src=singapore.src" name="singapore" src="images/singapore.png" />
+            </div> 
+            <br />
+
+            <div class="preview" align="center">
+                <img name="preview" src="images/thailand.png" />
+            </div>
+
+        </div>
+
+    </body>
+</html>
